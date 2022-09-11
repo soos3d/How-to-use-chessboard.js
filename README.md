@@ -10,8 +10,8 @@ Learning by creating something you enjoy is the best way to learn!
 
 ### Create a chess game series
 
-* - Create an interactive chess board with `chessboard.js`. <----- You are here. 
-* - Integrate the `chess.js` API to make a functioning chess game. (Work in progress)
+* Create an interactive chess board with `chessboard.js`. <----- You are here. 
+* Integrate the `chess.js` API to make a functioning chess game. (Work in progress)
 
 ## Table of contents
 
