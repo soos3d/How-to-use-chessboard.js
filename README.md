@@ -13,6 +13,28 @@ Learning by creating something you enjoy is the best way to learn!
 * - Create an interactive chess board with `chessboard.js`. <----- You are here. 
 * - Integrate the `chess.js` API to make a functioning chess game. (Work in progress)
 
+## Table of contents
+
+  - [Introduction](#introduction)
+    - [Create a chess game series](#create-a-chess-game-series)
+  - [Objectives](#objectives)
+  - [What is chessboard.js](#what-is-chessboardjs)
+  - [Requirements](#requirements)
+  - [Quick use](#quick-use)
+  - [Create the project's folder](#create-the-projects-folder)
+  - [How to use chessboard.js](#how-to-use-chessboardjs)
+    - [Prepare chessboard.js](#prepare-chessboardjs)
+    - [index.html](#indexhtml)
+    - [Import the necessary libraries](#import-the-necessary-libraries)
+    - [The HTML body](#the-html-body)
+  - [Different board set ups](#different-board-set-ups)
+    - [Customize pieces position](#customize-pieces-position)
+      - [Use a FEN string](#use-a-fen-string)
+      - [Use the position object](#use-the-position-object)
+  - [Make an interactive chessboard](#make-an-interactive-chessboard)
+  - [Customize the board style](#customize-the-board-style)
+  - [Conclusion](#conclusion)
+
 ## Objectives
 
 This tutorial will show you how to use the `chessboard.js` library to create an interactive chess board.
