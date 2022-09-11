@@ -58,7 +58,7 @@ Clone this repo in your project's folder.
 You will find the library ready to go in the `chessboardjs-1.0.0` folder.
 
 ```sh
-git clone 
+git clone https://github.com/soos3d/Make-a-basic-chess-board-with-chessboard.js.git
 ```
 
 From the main directory, run the following command to serve `index.html` and see it in your browser. 
@@ -252,7 +252,7 @@ lite-server
 
 This will serve the page in your browser, and you will see an empty board.
 
-> Place image here
+![screely-1662913346017](https://user-images.githubusercontent.com/99700157/189538278-7ead0640-6f7a-4939-8ed0-909fdb170996.png)
 
 Congratulations on making a chessboard!
 
@@ -273,7 +273,7 @@ If you closed the previous page, restart the service using `lite-server` and you
 
 > Note that this board is not interactive yet, is only for display.
 
-> place image
+![screely-1662913425235](https://user-images.githubusercontent.com/99700157/189538349-b4947a23-2d8b-49fc-b988-ac891b618b32.png)
 
 ### Customize pieces position
 
@@ -296,7 +296,7 @@ var board = Chessboard("board", "8/5q2/3k4/1R6/3PK3/8/8/8")
 
 This will be the result:
 
-> place image.
+![screely-1662913502903](https://user-images.githubusercontent.com/99700157/189538403-f1990add-5163-49dd-8731-de9b1be09ee6.png)
 
 #### Use the position object
 
@@ -321,9 +321,7 @@ The second way we have is to specify the position of each piece by passing an ob
 
 Find more about the position object in the [chessboard.js docs](https://chessboardjs.com/docs.html#config:position).
 
-This will be the result.
-
-> place image.
+This set up is the same as the FEN set up.
 
 Now you know how to use chessboard.js to create a static board and populate it how you want!
 
@@ -363,7 +361,7 @@ $('#startBtn').on('click', board.start)     // Set up the pieces in the starting
 $('#clearBtn').on('click', board.clear)     // Clear the board.
 ```
 
-> place image
+![screely-1662913605829](https://user-images.githubusercontent.com/99700157/189538469-15d8f2e5-169b-4d74-910c-7b6a4700df44.png)
 
 And now you have an interactive board! You could even use it to play locally with a friend, but remember that this board has no idea about the rules; we'll see that part in the following tutorial. 
 
@@ -481,7 +479,7 @@ This is what the default file looks like; you can replace the colors pointed out
 
 Once you save it the changes take place.
 
-> add image
+![screely-1662913665218](https://user-images.githubusercontent.com/99700157/189538519-f7c7eecd-dfd6-46b1-8506-0c1f11f706b6.png)
 
 Then we can customize the pieces simply but having new `.png` files inside `/chessboardjs-1.0.0/img/chesspieces/wikipedia/`, or by creating a new folder and then redirecting the path inside `chessboard-1.0.0.js` like we did in the beginning. 
 
@@ -495,7 +493,7 @@ Then we can customize the pieces simply but having new `.png` files inside `/che
     }
 ```
 
-> Add image
+![screely-1662913670851](https://user-images.githubusercontent.com/99700157/189538523-52e71b87-66e8-400e-9a89-781477982d23.png)
 
 ## Conclusion
 
