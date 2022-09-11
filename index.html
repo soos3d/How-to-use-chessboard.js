@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Interactive chessboard</title>
+    
+    <link rel="stylesheet" href="chessboardjs-1.0.0\css\chessboard-1.0.0.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="chessboardjs-1.0.0\js\chessboard-1.0.0.js"></script>
+
+</head>
+
+<body>
+    <!-- Create a board, customize the size using the 'width' parameter -->
+    <div id="board" style="width: 600px"></div>
+
+    <!-- Button elements to interact with the board -->
+    <button id="startBtn">Start Positions</button>
+    <button id="clearBtn">Clear Board</button>
+
+    <!-- JavaScript and JQuery are used for the logic -->
+    <script>
+        // Create a board variable using the "Chessboard" keyword.
+        var board = Chessboard('board', {           // This object specifies the level of interaction.
+            draggable: true,                        // Make the pieces draggable.
+            dropOffBoard: 'trash',                  // Remove pieces by draggin them off the board.
+            sparePieces: true                       // Show pieces outside the board and allow to drag them onto the board.
+        })
+
+        // Commands executed by the buttons.
+        $('#startBtn').on('click', board.start)     // Set up the pieces in the starting position.
+        $('#clearBtn').on('click', board.clear)     // Clear the board.
+    </script>
+</body>
+
+</html>

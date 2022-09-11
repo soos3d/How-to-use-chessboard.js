@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Interactive chessboard</title>
+    
+    <link rel="stylesheet" href="chessboardjs-1.0.0\css\chessboard-1.0.0.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="chessboardjs-1.0.0\js\chessboard-1.0.0.js"></script>
+
+</head>
+
+<body>
+    <!-- Create a board, customize the size using the 'width' parameter -->
+    <div id="board" style="width: 600px"></div>
+
+    <script>
+         // Set up pieces configuration 
+        // Find the pieces name in chessboardjs-1.0.0\img\chesspieces\wikipedia
+        const configuration = {
+            position: {
+                d4: 'wP',      // Assign the position by specifing a <square : 'piece-name'> 
+                d6: 'bK',
+                f7: 'bQ',
+                e4: 'wK',
+                b5: 'wR',
+            }
+        }
+
+        // Create a board variable using the "Chessboard" keyword.
+        var board = Chessboard("board", configuration)
+    </script>
+</body>
+
+</html>
