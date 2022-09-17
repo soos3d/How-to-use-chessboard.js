@@ -503,20 +503,31 @@ Once you save it the changes take place.
 
 ![screely-1662913665218](https://user-images.githubusercontent.com/99700157/189538519-f7c7eecd-dfd6-46b1-8506-0c1f11f706b6.png)
 
-Then we can customize the pieces simply but having new `.png` files inside `/chessboardjs-1.0.0/img/chesspieces/wikipedia/`, or by creating a new folder and then redirecting the path inside `chessboard-1.0.0.js` like we did in the beginning. 
+Then we can customize the pieces, we have two options:
+
+1. Simply by having new `.png` files inside `/chessboardjs-1.0.0/img/chesspieces/wikipedia/`.
+1. By creating a new folder in `/chessboardjs-1.0.0/img/chesspieces/` and use the ` pieceTheme` property.
 
 > The images need to be 80 x 80 pixels. 
 
+If you replace the files inside the `/chessboardjs-1.0.0/img/chesspieces/wikipedia/` folder, you don't need to do anything else.
+
+But if you create a new directory with new files, you'll need to add the `pieceTheme` path in the JS linked to your HTML page.
+
+In this example, I have created a folder inside `/chessboardjs-1.0.0/img/chesspieces/` named `fancy`, then linked `pieceTheme` to it.
+
 ```js
-// default piece theme is wikipedia
-    if (!config.hasOwnProperty('pieceTheme') ||
-        (!isString(config.pieceTheme) && !isFunction(config.pieceTheme))) {
-      config.pieceTheme = 'img/chesspieces/NEW_FOLDER/{piece}.png' 
-    }
+var board = Chessboard('board', {           // This object specifies the level of interaction.
+            draggable: true,                            // Make the pieces draggable.
+            dropOffBoard: 'trash',                  // Remove pieces by draggin them off the board.
+            sparePieces: true,                       // Show pieces outside the board and allow to drag them onto the board.
+            pieceTheme: 'chessboardjs-1.0.0/img/chesspieces/fancy/{piece}.png',   // Link new pieces 
+        })
 ```
 
 ![screely-1662913670851](https://user-images.githubusercontent.com/99700157/189538523-52e71b87-66e8-400e-9a89-781477982d23.png)
 
+That's it, now you can customize your chess pieces!
 ## Conclusion
 
 Great job getting through all of this! Now you are ready to start creating your own chess scenarios!
